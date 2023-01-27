@@ -1,0 +1,29 @@
+.title{
+   font-family: var(--font-primary);
+   color: var(--color-red);
+   font-weight: 600; 
+}
+
+.title.one{
+    font-size: 2.4rem;   
+}
+
+.title.two{
+    font-size: 2rem;
+}
+
+.title.three{
+    font-size: 1.5rem;
+}
+
+.paragraph{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1rem; 
+}
+
+@media (max-width: 800px){
+    .title.one{
+        font-size: 1.8rem;   
+    }    
+}

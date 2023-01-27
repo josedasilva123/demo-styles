@@ -1,0 +1,14 @@
+.mainPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+@media (max-width: 800px){
+    .mainPage{
+        gap: 20px;
+    }   
+}

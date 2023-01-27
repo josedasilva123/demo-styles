@@ -1,0 +1,8 @@
+:root{
+    --font-primary: 'Inter', sans-serif;
+    --color-red: red;
+}
+
+.dark{
+    --color-red: blue; 
+}

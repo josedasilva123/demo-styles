@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import WelcomePage from './pages/WelcomePage';
 import TeamPage from './pages/TeamPage';
+import './styles/index.css';
 
 function App() {
   const [team, setTeam] = useState([
@@ -28,9 +27,12 @@ function App() {
     }
   ])
   const [currentPage, setCurrentPage] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className="App">
+    <div className={darkMode ? "dark" : ""}>
+        <button onClick={() => setDarkMode(!darkMode)}>Darkmode</button>
+  
         {currentPage === "" && <WelcomePage setCurrentPage={setCurrentPage} />}
         {currentPage === "team" && <TeamPage team={team} setCurrentPage={setCurrentPage} />}
     </div>
