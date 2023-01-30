@@ -2,6 +2,7 @@ import { useState } from 'react'
 import WelcomePage from './pages/WelcomePage';
 import TeamPage from './pages/TeamPage';
 import './styles/index.css';
+import { StyledTitle } from './styles/typography';
 
 function App() {
   const [team, setTeam] = useState([
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+      <StyledTitle fontSize="three">Teste</StyledTitle>
         <button onClick={() => setDarkMode(!darkMode)}>Darkmode</button>
   
         {currentPage === "" && <WelcomePage setCurrentPage={setCurrentPage} />}

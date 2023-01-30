@@ -1,11 +1,12 @@
 import React from 'react'
+import { StyledTeamCard } from './style'
 
 const TeamCard = ({member}) => {
   return (
-    <li className={member.job === "Instrutor" ? styles.classX : styles.classY}>
-        <h3>{member.name}</h3>
-        <span>{member.job}</span>
-    </li>
+    <StyledTeamCard memberJob={member.job}>
+      <h3> <strong>#</strong> {member.name}</h3>
+      <span>{member.job}</span>
+    </StyledTeamCard>
   )
 }
 
