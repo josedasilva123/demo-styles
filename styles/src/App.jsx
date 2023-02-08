@@ -32,8 +32,9 @@ function App() {
   return (
     <div className={darkMode ? "dark" : ""}>
         <button onClick={() => setDarkMode(!darkMode)}>Darkmode</button>
-  
+
         {currentPage === "" && <WelcomePage setCurrentPage={setCurrentPage} />}
+
         {currentPage === "team" && <TeamPage team={team} setCurrentPage={setCurrentPage} />}
     </div>
   )
